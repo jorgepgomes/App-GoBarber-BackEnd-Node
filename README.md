@@ -4,6 +4,7 @@
 
 $ docker start 2ca948c0f0dc
 $ docker start mongodb
+$ docker start redis
 
 # EXECUTAR APLICAÇÃO
 
@@ -25,6 +26,14 @@ Dominio: Qual a área de conhecimento daquele módulo/arquivo
 
 DDD: Domain Driven Design (metodologia) -> BackEnd
 TDD: Test Driven Development (metodolgia) -> BackEnd and FrontEnd
+
+# Cache
+
+Redis
+
+TABELA
+
+chave e valor
 
 # Testes automatizados
 
