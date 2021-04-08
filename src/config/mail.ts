@@ -3,5 +3,5 @@ interface IMailConfig {
 }
 
 export default {
-  driver: process.env.MAIL_Driver || 'etheral',
+  driver: process.env.MAIL_DRIVER || 'etheral',
 } as IMailConfig;
