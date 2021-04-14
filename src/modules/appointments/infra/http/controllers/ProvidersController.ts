@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { parseISO } from 'date-fns';
+import { classToClass } from 'class-transformer';
 import { container } from 'tsyringe';
 
 import ListProiversService from '@modules/appointments/services/ListProvidersService';
@@ -13,6 +13,6 @@ export default class ProvidersController {
     const providers = await listProviders.execute({
       user_id,
     });
-    return response.json(providers);
+    return response.json(classToClass(providers));
   }
 }
